@@ -1,4 +1,4 @@
-# linux-server-configuration
+# Linux Server Configuration
 
 Part of the udacity [Full Stack Web Developer Nanodegree.](https://udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 
@@ -16,7 +16,6 @@ You will take a baseline installation of a Linux server and prepare it to host y
 - virtualenv
 - flask
 - sqlalchemy
-- finger
 - Apache2
 - mod_wsgi
 - httplib2
@@ -236,7 +235,7 @@ python seeder.py
 ```
 
 ### Authenticate login through Google 
-- Go to Google Cloud Plateform.
+- Go to [Google Cloud Plateform](https://console.cloud.google.com/).
 - Click APIs & services on left menu.
 - Click Credentials.
 - Create an OAuth Client ID (under the Credentials tab), and add `http://your-public-ip` and `http://your-public-ip.xip.io` as authorized JavaScript origins.
@@ -244,7 +243,7 @@ python seeder.py
 - Download the corresponding JSON file, open it et copy the contents.
 - Open `/var/www/catalog/catalog/client_secret.json` and paste the previous contents into the this file.
 - Replace the client ID to line 25 of the `templates/login.html` file in the project directory.
-- Update path of client_secrets.json file in `application.py` to:
+- Update path of client_secrets.json file in `__init__.py` to:
 ```
 /var/www/catalog/catalog/client_secret.json
 ```
